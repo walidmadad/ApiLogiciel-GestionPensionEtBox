@@ -19,5 +19,3 @@ if (!empty($_POST['id_pension'])){
         $affichage = array("status" => "failed", "message" => "Error executing statement: " . mysqli_error($conn));
     }
 }
-
-echo json_encode($affichage, JSON_PRETTY_PRINT);
