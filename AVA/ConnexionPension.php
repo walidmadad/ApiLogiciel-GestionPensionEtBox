@@ -1,6 +1,6 @@
 <?php
-require_once 'database.php';
 
+require_once 'database.php';
 if (!empty($_POST['email']) && !empty($_POST['password'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -46,4 +46,4 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
     $result = array("status" => "failed", "message" => "All fields are required");
 }
 echo json_encode($result, JSON_PRETTY_PRINT);
-?>
+
